@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "border_viewer",
+  "version": "1.0",
+
+  "description": "Sample extension that adds a black border to all webpages aligning with mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.ico"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["border_viewer.js"]
+    }
+  ]
+
+}
